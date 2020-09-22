@@ -43,3 +43,18 @@ body {
 a {
   color: inherit;
 } 
+
+#root {
+  /* 100vh minimo 100% - 100% da tela aberta (viewport) */
+  min-height: calc(100vh - var(--bodyPaddingTop)); /* conta que tira o o tamanho do topo para aparece o footer */
+  /* background: orange; so pra teste e ver como esta ficando */
+  display: flex; /* flex: 1 só funciona se tiver display:flex */
+  flex-direction: column;
+}
+
+
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}

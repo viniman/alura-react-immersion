@@ -1,6 +1,8 @@
+//import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // duas crases: template strings
+//styled(Link)
 const Button = styled.button` 
     color: var(--white);
     border: 1px solid var(--white);

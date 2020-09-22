@@ -14,11 +14,13 @@ code {
 
 
 /* reset do css */
+/* pega todos os elementos da tela com o asterisco */
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
+/* variaveis no css */
 :root {
   --primary: #2A7AE4;
   --black: #000000;
@@ -30,12 +32,14 @@ code {
   --backEnd: #00C86F;
 }
 
+/* zera margin padding do html e body */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
+/* tidas tags a herda a cor do elemento pai */
 a {
   color: inherit;
 } 

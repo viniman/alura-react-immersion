@@ -6,16 +6,25 @@ import Button from '../Button'
 
 function Menu()
 {
+
+    // comentario fora
+    /*
+        comentario fora
+    */
     return (
+        // da pra fazer comentario antes de comecar
         <nav className="Menu">
             <a href="/">
                 <img className="Logo" src={Logo} alt='VinimanFlix logo'/>
             </a>
 
+            {/* COMENTARIOS EM JSX - PRECISA DAS CHAVES */}
+            {/*  */}
             <Button as="a" className="ButtonLink" href="/">
                 Novo vídeo
             </Button>
         </nav>
+        // comentario no final
     );
 }
 

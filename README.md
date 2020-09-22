@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project is implmented in Imersão React by Alura, and is a copy of Netflix, with youtube video links.
 
-![Imgur](https://github.com/viniman/alura-react-immersion/src/assets/img/logo.png)
+![Imgur](https://github.com/viniman/alura-react-immersion/blob/master/src/assets/img/logo.png)
 
 ## How to run
 

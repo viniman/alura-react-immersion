@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -28,14 +28,12 @@ function CadastroCategoria() {
 
     setValue(
       infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value
+      infosDoEvento.target.value,
     );
   }
 
-
-
   // ============
-/*
+  /*
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
       const URL = 'http://localhost:8080/categorias';
@@ -61,17 +59,17 @@ function CadastroCategoria() {
       {/* handle = manipular */}
       <form onSubmit={function handleSubmit(infosDoEvento) {
         console.log('envio de form');
-        
+
         infosDoEvento.preventDefault();
 
         setCategorias([
           ...categorias,
-          values
+          values,
         ]);
 
         setValues(valoresIniciais);
-      }}>
-
+      }}
+      >
 
         <FormField
           label="Nome da Categoria "
@@ -82,7 +80,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição: "
-          type="text"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -118,19 +116,17 @@ function CadastroCategoria() {
           </label>
         </div> */}
 
-        <button type="submit">
+        <Button type="submit">
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => {
-          return (
-            <li key={`${categoria}${indice}`}>
-              {categoria.nome}
-            </li>
-          )
-        })}
+        {categorias.map((categoria, indice) => (
+          <li key={`${categoria}`}>
+            {categoria.nome}
+          </li>
+        ))}
       </ul>
 
       <Link to="/">
